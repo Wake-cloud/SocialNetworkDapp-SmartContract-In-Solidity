@@ -336,7 +336,7 @@ contract MyContract {
         tokens[user] += amount;
     }
 
-    // This function was renamed to prevent confusion with `likePost` above
+    
     function likePostAndReward(address user, uint256 postIndex) public {
         require(postIndex < userPosts[user].length, "Invalid post index");
         userPosts[user][postIndex].likes++;
